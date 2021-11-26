@@ -1,0 +1,57 @@
+Where do stateful applications store their state? {
+=In databases
+=In in-memory user sessions
+~On the client side
+=In temporary files on the server
+~They don't store any state
+}
+
+Where do stateless applications store their state? {
+=In databases
+~In in-memory user sessions
+=On the client side
+~In temporary files on the server
+~They don't store any state
+}
+
+Scaling a service by running it on a bigger machine is {
+=Vertical scaling
+~Horizontal scaling
+}
+
+Scaling a service by running it multiple times in parallel is {
+~Vertical scaling
+=Horizontal scaling
+}
+
+How can stateful applications scale? {
+=Only vertically
+~Only horizontally
+~Both vertically and horizontally
+~They can't scale
+}
+
+How can stateless applications scale? {
+~Only vertically
+~Only horizontally
+=Both vertically and horizontally
+~They can't scale
+}
+
+Why would you favour statelessness over statefulness? {
+~Because the trainer said I should
+=Because it helps with reliability and availability by removing a SPOF
+~It's the other way round, you should favour statefulness over statelessness
+~Because it runs faster
+=Because statefulness can lead more easily to Big Balls of Mud
+=Because there is a limit to how powerful a single machine can be
+}
+
+What challenges do stateless applications face, compared to stateful ones? {
+~Scaling is more difficult
+=Client-side state might be altered
+=Backwards and forwards state compatibility
+~More powerful hardware is needed
+~They can't use databases
+=Concurrent writes to the database
+}
