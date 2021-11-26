@@ -1,0 +1,41 @@
+Are microservices and FaaS immune to Big Ball of Muds? { F
+}
+
+What is the main challenge microservices architecture face, compared to monoliths? {
+=Network issues (reliability, latency, bandwidth, etc.)
+~Adequate concerns decoupling
+#This is true regardless of the granularity
+}
+
+Good design of modules/microservices looks for… {
+~…cohesion between separate parts and decoupling inside each part
+=…decoupling between separate parts and cohesion inside each part
+}
+
+Monoliths and microservices are… {
+=…mostly designations of runtime granularity
+~…mostly designations of legacy and modern applications
+=…units of horizontal scalability
+~…deprecated in favour of FaaS
+}
+
+Does FaaS favour event-based conception? {
+T
+}
+
+Can FaaS can be stateful? {
+F
+}
+
+Modular monoliths… {
+=…can be split into microservices
+~…are Big Balls of Mud
+~…cannot be stateless
+=…require internal separation of services
+}
+
+Which is good starting point for designing modern applications? {
+~…FaaS
+=…Twelve-Factor App
+~…stateful applications
+}
