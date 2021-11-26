@@ -1,0 +1,57 @@
+Non-functional requirements can all be measured objectively {
+F
+}
+
+Setting rewards or bonuses on measured NFRs is a good idea {
+F
+# This would heavily favour turning the measures into the objectives
+}
+
+Automated code analysis tools should be blindly trusted {
+F
+# Like any automated analysis, it can be subject to false positives as well as false negatives
+}
+
+Security can be absolute {
+F
+}
+
+Performance is independent of where the users are {
+F
+}
+
+Maintainability is always a concern {
+F
+# There's not much room for maintainability in "run once & discard" applications
+}
+
+Addressing reliability may require specialised hardware {
+T
+}
+
+Code reviews can help addressing… {
+=…security
+=…maintainability
+=…performance
+=…reliability
+=…legal/regulatory compliance
+}
+
+Can NFRs be business requirements in disguise? {
+T
+}
+
+Pieces of technical debt can be described and tracked by asking {
+~Nothing, it is a myth. We always do things perfectly, first try. Even without the information we didn't know we needed.
+~What should we do? / When should we do it?
+=What is wrong? / Why do we care? / How could we fix it?
+}
+
+A good security principle is {
+=the Principle of Least Privilege
+~the Principle of Most Privilege
+}
+
+Security should be thought of after the fact {
+F
+}
