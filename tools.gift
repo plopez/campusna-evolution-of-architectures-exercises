@@ -1,0 +1,67 @@
+APIs … {
+=are contracts
+~are legal documents
+=can help decouple services
+~can be changed easily
+}
+
+A good API describes faithfully how the service is implemented {
+F
+}
+
+A rule of thumb for better backwards- and forwards- compatibility is: {
+=be strict with what you send, be lenient with what you receive
+~be lenient with what you send, be strict with what you receive
+}
+
+All abstraction leakage is bad {
+F
+# A bit of leakage can be useful to get the most out of services and tools
+}
+
+REST clients manipulate {
+=resources
+~commands
+~neither
+}
+
+The WWW is a RESTFul system {
+T
+}
+
+With REST, no state is ever kept on the service side {
+F
+}
+
+REST requires HTTP {
+F
+}
+
+gRPC requires HTTP/2 {
+T
+}
+
+gRPC requires Protobuf {
+T
+}
+
+Protobuf is {
+=a binary format
+~a textual format
+=schema-based
+~schemaless
+}
+
+JSON is {
+~a binary format
+=a textual format
+=whitespace-insensitive
+~whitespace-sensitive
+}
+
+YAML is {
+~a binary format
+=a textual format
+~whitespace-insensitive
+=whitespace-sensitive
+}
