@@ -1,0 +1,78 @@
+How do actors communicate in the actor model? {
+~By sending HTTP requests to each other
+~By sending messages through a message bus
+=By sending messages to mailboxes
+}
+
+What is the main task actors perform? {
+~Generate messages when they are started
+=React to the arrival of messages in their mailbox
+~Re-enact Otello
+}
+
+Which actions can an actor perform when processing a message? {
+=Modify its internal state
+~Send an finite number of events
+# The messages sent do not need to be events
+=Send a finite number of messages
+=Create other actors
+}
+
+Actors are forced to perform their action sequentially {
+F
+}
+
+The actors system is inherently synchronous {
+F
+}
+
+The actors system is inherently scalable {
+T
+}
+
+Events are immutable {
+T
+}
+
+Events have a timestamp {
+T
+}
+
+Event-driven models decouple production from consumption in {
+=Time (when events are processed)
+=Space (where events are processed)
+~Intent (why events are processed)
+#Producers still need to know what information is of interest to the consumers
+}
+
+Which statements are true? {
+~Consumers need to listen to all event queues, not only the ones they are interested in
+=Event queues should remain relatively empty
+=Event logs can only grow
+~Event logs should remain relatively empty
+=Event from an event log can be replayed by a consumer
+}
+
+Event-sourcing is the go-to pattern when auditability is a plus {
+F
+#Event-sourcing brings a lot of weight with it; it must be carefully considered.
+}
+
+Indexing is unimportant with event-sourcing {
+F
+#Entities should be partitioned or indexed by their key
+}
+
+Event-sourcing provides a way of tracing how a user precisely affected the system {
+T
+}
+
+CQRS must be used with event-sourcing {
+F
+#CQRS is a pattern of its own
+}
+
+With CQRS, eventual consistency becomes a thing {
+T
+#The denormalisation between the command side and the query side may imply a lag
+}
