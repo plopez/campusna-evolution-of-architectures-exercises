@@ -1,0 +1,31 @@
+Architects should base their decisions on personal preference {
+F
+}
+
+Architects should care mostly about performance {
+F
+}
+
+Interactions between architects and other team members should be kept at a minimum {
+F
+}
+
+Measure is key to improvement {
+T
+}
+
+Which is correct? {
+=risk = probability x impact
+~danger = probability x impact
+~risk = danger x impact
+}
+
+Risks must be zeroed-out {
+F
+#They should only be mitigated below an acceptable level
+}
+
+Architectures must be flawless on first try {
+F
+#Architectures need a feedback loop to be set up for their improvement.
+}
