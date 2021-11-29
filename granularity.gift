@@ -1,4 +1,4 @@
-Are microservices and FaaS immune to Big Ball of Muds? { F
+Microservices and FaaS are immune to Big Ball of Muds { F
 }
 
 What is the main challenge microservices architecture face, compared to monoliths? {
@@ -19,11 +19,11 @@ Monoliths and microservices are… {
 ~…deprecated in favour of FaaS
 }
 
-Does FaaS favour event-based conception? {
+FaaS favour event-based conception {
 T
 }
 
-Can FaaS can be stateful? {
+FaaS can be stateful {
 F
 }
 
