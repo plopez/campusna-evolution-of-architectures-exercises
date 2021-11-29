@@ -12,7 +12,7 @@ What is the main task actors perform? {
 
 Which actions can an actor perform when processing a message? {
 =Modify its internal state
-~Send an finite number of events
+~Send a finite number of events
 # The messages sent do not need to be events
 =Send a finite number of messages
 =Create other actors
